@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANITS Central Placement Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: #003b64;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 12px 40px;
+        }
+
+        header img {
+            width: 65px;
+            height: 65px;
+            margin-right: 18px;
+        }
+
+        .college-name h1 {
+            font-size: 23px;
+        }
+
+        .college-name p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #002b4a;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Login */
+        .container {
+            min-height: calc(100vh - 120px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            width: 360px;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .login-box img {
+            width: 75px;
+            margin-bottom: 10px;
+        }
+
+        .login-box h2 {
+            color: #003b64;
+            margin-bottom: 25px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background: #003b64;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background: #006699;
+        }
+
+        .login-box p {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="ANITS Logo">
+
+        <div class="college-name">
+            <h1>ANITS - Central Placement Portal</h1>
+            <p>Anil Neerukonda Institute of Technology & Sciences</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Apply Job</a>
+        <a href="#">Results</a>
+        <a href="#">Upcoming Placements</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="login-box">
+
+            <img src="logo.jpg" alt="ANITS Logo">
+
+            <h2>Student Login</h2>
+
+            <input type="text" id="username" placeholder="Enter Username">
+
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <button onclick="login()">LOGIN</button>
+
+            <p>Enter your credentials to access the placement portal.</p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function login() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "") {
+                alert("Please enter username");
+                return;
+            }
+
+            if (password === "") {
+                alert("Please enter password");
+                return;
+            }
+
+            window.location.href = "success.html";
+        }
+    </script>
+
+</body>
+</html>

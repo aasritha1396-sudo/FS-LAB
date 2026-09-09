@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANITS Central Placement Portal</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        color: #333;
+    }
+
+    /* HEADER */
+    .header {
+        height: 70px;
+        background: rgba(0, 50, 80, 0.90);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 40px;
+        top: 7px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .college {
+        text-align: center;
+    }
+
+    .college h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .college p {
+        margin: 4px 0;
+        font-size: 12px;
+    }
+
+    /* NAVIGATION */
+    .nav {
+        height: 30px;
+        background: rgba(0, 80, 120, 0.9);
+        text-align: center;
+        padding-top: 8px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 0 12px;
+    }
+
+    .nav a:hover {
+        color: yellow;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+        width: 650px;
+        margin: 55px auto;
+        background: rgba(210, 220, 220, 0.75);
+        padding: 25px;
+        min-height: 230px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+
+    .main h3 {
+        color: green;
+        font-size: 20px;
+        margin: 0 0 12px 0;
+    }
+
+    .main p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .logout {
+        color: blue;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    /* NOTICE BOX */
+    .notice {
+        margin-top: 20px;
+        background: rgba(255, 245, 190, 0.80);
+        border-left: 5px solid #e5b400;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .notice h4 {
+        color: blue;
+        margin: 0 0 8px 0;
+        font-size: 14px;
+    }
+
+    .notice ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .notice li {
+        margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 40, 65, 0.8);
+        color: white;
+        font-size: 10px;
+        padding: 7px;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <img src="logo.jpg" class="logo" alt="ANITS Logo">
+
+        <div class="college">
+            <h3>Anil Neerukonda Institute of Technology & Sciences</h3>
+            <p>Campus Placement Portal</p>
+        </div>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Apply Job</a>
+        <a href="#">Results</a>
+        <a href="#">Upcoming Placements</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <h3>Login Successful!</h3>
+
+        <p>
+            Welcome to ANITS Central Placement Portal
+        </p>
+
+        <a href="index.html" class="logout">
+            Logout Here
+        </a>
+
+        <!-- IMPORTANT NOTICE -->
+        <div class="notice">
+
+            <h4>Important Notice</h4>
+
+            <ul>
+                <li>Please ensure that the training & placement office is updated by students.</li>
+                <li>Keep your academic and personal details updated.</li>
+                <li>Check regularly for new placement opportunities.</li>
+                <li>Attend all company placement drives as scheduled.</li>
+                <li>Keep your Resume, Academic Documents, and ID Card ready.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © ANITS | Developed Training & Placement
+    </div>
+
+</body>
+</html>
