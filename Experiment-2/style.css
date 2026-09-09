@@ -1,0 +1,424 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo */
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Heading */
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #00509e;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Sections */
+
+section {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Video */
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Paragraph */
+
+section p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Button */
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Placement Highlight Cards */
+
+article {
+    display: inline-block;
+    width: 220px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Footer */
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: yellow;
+}
+/* Hero Section */
+
+/* Hero Section */
+
+.hero{
+    position: relative;
+}
+
+.hero video{
+    width: 100%;
+    display: block;
+}
+
+/* Moving Text */
+
+.moving-text{
+    position: absolute;
+    top: 20px;
+    left: -100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px black;
+    white-space: nowrap;
+    animation: moveText 12s linear infinite;
+}
+
+/* Animation */
+
+@keyframes moveText{
+
+    from{
+        left: -100%;
+    }
+
+    to{
+        left: 100%;
+    }
+
+}
+/* About Page Sections */
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+/* Section Headings */
+
+section h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Lists */
+
+ul, ol {
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Placement Officer */
+
+figure {
+    text-align: center;
+    margin-top: 20px;
+}
+
+figure img {
+    border-radius: 10px;
+    border: 3px solid #003366;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* ========================= */
+/* Register Page Form Styles */
+/* ========================= */
+
+form{
+    width:60%;
+    margin:30px auto;
+    background-color:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+    text-align:left;
+}
+
+form label{
+    font-weight:bold;
+    color:#003366;
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid gray;
+    border-radius:5px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+form textarea{
+    resize:vertical;
+}
+
+form input[type="radio"],
+form input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+}
+
+form input[type="file"]{
+    border:none;
+}
+
+form input[type="submit"],
+form input[type="reset"]{
+    width:150px;
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+form input[type="submit"]{
+    background-color:#28a745;
+}
+
+form input[type="submit"]:hover{
+    background-color:#218838;
+}
+
+form input[type="reset"]{
+    background-color:#dc3545;
+}
+
+form input[type="reset"]:hover{
+    background-color:#c82333;
+}
+
+/* Login Form */
+
+.login-form{
+    width:40%;
+    margin:30px auto;
+    background-color:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+    text-align:left;
+}
+/* ========================= */
+/* Contact Page */
+/* ========================= */
+
+.contact-info{
+    width:80%;
+    margin:30px auto;
+    background-color:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.contact-info p{
+    font-size:18px;
+    margin:12px 0;
+}
+
+/* ========================= */
+/* Companies Page */
+/* ========================= */
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background-color:white;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+table th{
+    background-color:#003366;
+    color:white;
+    padding:15px;
+    font-size:18px;
+}
+
+table td{
+    padding:12px;
+    text-align:center;
+    font-size:16px;
+}
+
+table tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+table tr:hover{
+    background-color:#d6eaf8;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+section h2{
+    text-align:center;
+    color:#003366;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+table{
+    border:2px solid #003366;
+}
+
+table th{
+    text-transform:uppercase;
+}
+
+table td{
+    vertical-align:middle;
+}
+.contact-info strong{
+    color:#003366;
+}
+/* ========================= */
+/* Contact Page */
+/* ========================= */
+
+.contact-info{
+    width:80%;
+    margin:30px auto;
+    background-color:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.contact-info p{
+    font-size:18px;
+    margin:12px 0;
+}
+
+.contact-info strong{
+    color:#003366;
+}
+.register-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background-color:#0077cc;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.register-btn:hover{
+    background-color:#005fa3;
+}
